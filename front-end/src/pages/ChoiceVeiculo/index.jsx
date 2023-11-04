@@ -1,4 +1,3 @@
-import '../../App.css'
 import { Body } from '../../components/Body.Style'
 import { BodyContainer, CabContainer, ImgDiv, TitleDiv, TitleText } from '../../components/ConteinerCentral.style'
 import { CenterTitle, Exit, ImgCar, StyleHeader, Title, ImageCarDiv } from '../../components/Header.Style'

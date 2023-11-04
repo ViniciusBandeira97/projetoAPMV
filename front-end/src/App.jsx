@@ -1,10 +1,10 @@
 import './App.css'
-import ChoiceVeiculo from './pages/ChoiceVeiculo'
+import AppRoutes from './routes/routes'
 function App() {
 
   return (
     <>
-      <ChoiceVeiculo />     
+      <AppRoutes />     
     </>
   )
 }
