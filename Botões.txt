@@ -1,0 +1,20 @@
+import {ChoiceButton, MenuButton, DecisionButton, ReturnMenuButton} from './components/Button.style'
+
+      <ChoiceButton>Selecionar veículo</ChoiceButton>
+      <ChoiceButton>Cadastrar novo veículo</ChoiceButton>
+      <MenuButton onecolor='#34A853' twocolor='#4CE073'>Novo teste</MenuButton>
+      <MenuButton onecolor='#F49505' twocolor='#FFCA7A'>Histórico</MenuButton>
+      <MenuButton onecolor='#00385F' twocolor='#0076C8'>Trocar Veículo</MenuButton>
+      <MenuButton onecolor='#CB0000' twocolor='#FF2E2E'>Excluir veículo</MenuButton>
+
+      <DecisionButton onecolor='#007B21' twocolor='#00C735'>SIM</DecisionButton>
+      <DecisionButton onecolor='#FFB904' twocolor='#B18000'>NÃO</DecisionButton>
+
+      
+      <DecisionButton onecolor='#007B21' twocolor='#00C735'>Voltar</DecisionButton>
+      <DecisionButton onecolor='#CB0000' twocolor='#FF0000'>Excluir</DecisionButton>
+
+      <DecisionButton onecolor='#007B21' twocolor='#00C735'>Salvar</DecisionButton>
+      <DecisionButton onecolor='#CB0000' twocolor='#FF0000'>Cancelar</DecisionButton>
+
+      <ReturnMenuButton>Voltar Menu</ReturnMenuButton>
