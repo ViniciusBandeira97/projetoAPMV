@@ -1,0 +1,13 @@
+#1 Criando front-end   
+    - Usando npm vite@latest
+    - nome: front-end
+    - react
+    - JavaScript
+    - Depois instala "npm install"
+    - Roda a aplicação "npm run dev"
+
+#2 Biblioteca React Router - Ferramenta de gerencia de rotas 
+    - npm install react-router-dom
+
+#3 Biblioteca Style Components
+    - npm install styled-components
