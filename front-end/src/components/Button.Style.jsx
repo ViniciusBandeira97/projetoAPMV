@@ -19,23 +19,36 @@ export const ChoiceButton = styled.button`
         border: 3px solid #F90;
     }
 `
-/* Estilo + fonte + efeito Hover / para os botãos do Menu */
+/**------------------------------------------------------------------------------------------------- */
+/**------------------------------------------------------------------------------------------------- */
+/* Conteiner do botão + estilo + efeito Hover / para os botãos do Menu */
 export const MenuButton = styled.button`
     background: ${(prop) => prop.onecolor}; /** É passado cor RGB via propriedades  */
+    display: flex;
     width: 226px;
     height: 59px;
     border-radius: 24px;
     border: 3px solid #003BFF;
-    color: #FFF;
-    font-family: Inter;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
+    margin-bottom: 25px;
     &:hover{
         background: ${(prop) => prop.twocolor}; /** É passado cor RGB via propriedades  */
         border: 3px solid #F90;
     }
 `
+/* Conteiner do texto + Font / para os botãos do Menu */
+export const MenuText = styled.h1 `
+    padding-top: 11.50px;
+    width: 100%;
+    height: 36px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+`
+/**------------------------------------------------------------------------------------------------- */
+/**------------------------------------------------------------------------------------------------- */
 /* Estilo + fonte + efeito Hover / para os botãos de decisão */
 export const DecisionButton = styled.button`
     background: ${(prop) => prop.onecolor}; /** É passado cor RGB via propriedades  */
@@ -72,4 +85,7 @@ export const ReturnMenuButton = styled.button`
 `
 export const ChoiceDiv = styled.div`
     padding-top: 130px;    
+`
+export const MenuDiv = styled.div`
+    padding-top: 45px;    
 `

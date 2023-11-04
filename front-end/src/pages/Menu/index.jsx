@@ -1,8 +1,8 @@
 import { Body } from '../../components/Body.Style'
 import { BodyContainer, CabContainer, ImgDiv, TitleDiv, TitleText } from '../../components/ConteinerCentral.style'
 import { CenterTitle, Exit, ImgCar, StyleHeader, Title, ImageCarDiv } from '../../components/Header.Style'
-import { ParagraphChoice } from '../../components/TextFormatting.Style'
-import {ChoiceButton, ChoiceDiv } from '../../components/Button.style'
+import { ParagraphMenu, VariableCar } from '../../components/TextFormatting.Style'
+import { MenuButton, MenuDiv, MenuText } from '../../components/Button.style'
 
 function index() {
 
@@ -28,11 +28,15 @@ function index() {
 
           </CabContainer>    
           <BodyContainer>
-            <ParagraphChoice>Click nas opções abaixo para prosseguir...</ParagraphChoice>
-              <ChoiceDiv>
-                <ChoiceButton>Selecionar veículo</ChoiceButton>
-                <ChoiceButton>Cadastrar novo veículo</ChoiceButton>
-              </ChoiceDiv>
+            <VariableCar>MARCA</VariableCar>
+            <VariableCar>MODELO</VariableCar>
+            <ParagraphMenu>Opções:</ParagraphMenu>
+                <MenuDiv>
+                    <MenuButton onecolor='#34A853' twocolor='#4CE073'><MenuText>Novo Teste</MenuText></MenuButton>
+                    <MenuButton onecolor='#F49505' twocolor='#FFCA7A'><MenuText>Histórico</MenuText></MenuButton>
+                    <MenuButton onecolor='#00385F' twocolor='#0076C8'><MenuText>Trocar Veículo</MenuText></MenuButton>
+                    <MenuButton onecolor='#CB0000' twocolor='#FF2E2E'><MenuText>Excluir veículo</MenuText></MenuButton>
+                </MenuDiv>
               
           </BodyContainer>
         </center>
