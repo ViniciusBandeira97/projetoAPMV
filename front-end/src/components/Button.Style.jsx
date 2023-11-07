@@ -48,12 +48,12 @@ export const MenuText = styled.h1 `
     font-weight: 700;
 `
 /**------------------------------------------------------------------------------------------------- */
-/**------------------------------------------------------------------------------------------------- */
-/* Estilo + fonte + efeito Hover / para os botãos de decisão */
+/**---------------Estilo + fonte + efeito Hover / para os botãos de decisão------------------------- */
 export const DecisionButton = styled.button`
     background: ${(prop) => prop.onecolor}; /** É passado cor RGB via propriedades  */
     width: 156.696px;
     height: 53.375px;
+    margin: 15px;
     border-radius: 24px;
     border: 3px solid #003BFF; 
     color: #FFF;
@@ -66,6 +66,12 @@ export const DecisionButton = styled.button`
         border: 3px solid #F90;
     }
 `
+export const DivDB = styled.div `
+    padding-top: 40px;
+    width: 100%;  
+    height: 157px;
+`
+
 /* Estilo + fonte + efeito Hover / para os botão de retornar */
 export const ReturnMenuButton = styled.button`
     background: #00385F;

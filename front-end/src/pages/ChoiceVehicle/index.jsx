@@ -1,21 +1,14 @@
 import { Body } from '../../components/Body.Style'
 import { BodyContainer, CabContainer, ImgDiv, TitleDiv, TitleText } from '../../components/ConteinerCentral.style'
-import { CenterTitle, Exit, ImgCar, StyleHeader, Title, ImageCarDiv } from '../../components/Header.Style'
 import { ParagraphChoice } from '../../components/TextFormatting.Style'
 import {ChoiceButton, ChoiceDiv } from '../../components/Button.style'
+import HeaderGlobal from '../../components/Header/HeaderGlobal'
 
 function index() {
 
   return (
     <>
-      <StyleHeader>
-        <Title>Projeto APMV</Title>
-        <ImageCarDiv>
-          <ImgCar src="./images/car.png" />
-          <CenterTitle>Bem Vindo!</CenterTitle>
-        </ImageCarDiv>
-        <Exit>Sair</Exit>
-      </StyleHeader>
+    <HeaderGlobal />
       <Body>
         <center>
           <CabContainer>
