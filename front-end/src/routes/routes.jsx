@@ -5,6 +5,7 @@ import RegisterNew from "../pages/RegisterNew"
 import Vehicle from "../pages/Vehicle"
 import HistoricDelete from "../pages/HistoricDelete"
 import RegisterDelete from "../pages/RegisterDelete"
+import Teste from "../pages/SingIn"
 
 function AppRoutes(){
     return (
@@ -16,6 +17,8 @@ function AppRoutes(){
                 <Route path="/menu" element={ <Menu /> }></Route>
                 <Route path="/historicdelete" element={ <HistoricDelete /> }></Route>
                 <Route path="/registerdelete" element={ <RegisterDelete /> }></Route>
+                <Route path="/teste" element={ <Teste /> }></Route>
+
             </Routes>
         </BrowserRouter>
     );

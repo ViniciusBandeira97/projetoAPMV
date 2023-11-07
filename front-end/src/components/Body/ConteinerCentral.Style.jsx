@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const CabContainer = styled.div `
+    margin-top: 5px;
     width: 562px;
     height: 140px;
     border-radius: 16px 16px 0px 0px;
@@ -10,7 +11,7 @@ export const CabContainer = styled.div `
     border-top: 5px solid #000;
     border-bottom: 5px solid #111933;
     @media(max-width: 1370px){
-        width: 502px;
+        width: 490px;
         height: 90px;
     }
 `
@@ -23,7 +24,7 @@ export const BodyContainer = styled.div `
     border-bottom: 5px solid #000;
     background: #DDD;
     @media(max-width: 1370px){
-        width: 502px;
+        width: 490px;
         height: 450px;
     }
 `
