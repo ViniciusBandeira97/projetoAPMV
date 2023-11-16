@@ -5,19 +5,19 @@ import RegisterNew from "../pages/RegisterNew"
 import Vehicle from "../pages/Vehicle"
 import HistoricDelete from "../pages/HistoricDelete"
 import RegisterDelete from "../pages/RegisterDelete"
-import Teste from "../pages/SingIn"
+import PrincipalPage from "../pages/SingIn"
 
 function AppRoutes(){
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={ <PrincipalPage /> }></Route>
                 <Route path="/select" element={ <ChoiceVeiculo /> }></Route>
                 <Route path="/registercar" element={ <RegisterNew /> }></Route>
                 <Route path="/selectcar" element={ <Vehicle /> }></Route>
                 <Route path="/menu" element={ <Menu /> }></Route>
                 <Route path="/historicdelete" element={ <HistoricDelete /> }></Route>
                 <Route path="/registerdelete" element={ <RegisterDelete /> }></Route>
-                <Route path="/teste" element={ <Teste /> }></Route>
 
             </Routes>
         </BrowserRouter>

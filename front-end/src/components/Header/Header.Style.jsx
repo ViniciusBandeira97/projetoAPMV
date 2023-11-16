@@ -1,5 +1,40 @@
 import styled from "styled-components";
 
+/**------------------------------------------------------------------------------------------------- */
+/**---------------------Estilo para Header da Pagina principal de LOGIN----------------------------- */
+export const HeaderLoginPage = styled.div`
+    width: 100%;    
+    height: 354px;
+    padding-top: 51px;
+    background: #012239;
+`
+export const TitleLoginPage = styled.h1`
+    width: 100%;
+    height: 74px;
+    // ---FONTE DESIGN---- 
+    color: #FFF;
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+`
+export const DivImgLoginPage = styled.div`
+    width: 100%;
+    height: 140px;
+    padding-top: 19px;
+`
+export const ImgLoginPage = styled.img `
+    width: 240px;
+    height: 84px;
+`
+export const Container1LoginPage = styled.div`
+    width: 415px;
+    height: 535px;
+    border-radius: 60px;
+    background: #FFF;
+`
+/**------------------------------------------------------------------------------------------------- */
+/**---------------------Estilo para Header padrão de todas as paginas------------------------------- */
 export const StyleHeader = styled.div`
     width: 100%;
     height: 111px;
@@ -26,6 +61,14 @@ export const ImageCarDiv = styled.div`
     @media (max-width: 1370px){
        padding-right: 130px;
     }
+`
+export const ImgCar = styled.img `
+    width: 135px;
+    height: 52px;
+    @media (max-width: 1370px) {
+        width: 110px;
+        height: 42px;
+    }    
 `
 export const DivExit =styled.div`
     height: 100%;
@@ -57,14 +100,6 @@ export const CenterTitle = styled.h1`
     line-height: normal;
     @media (max-width: 1370px) {
         font-size: 20px;
-    }    
-`
-export const ImgCar = styled.img `
-    width: 135px;
-    height: 52px;
-    @media (max-width: 1370px) {
-        width: 110px;
-        height: 42px;
     }    
 `
 export const Exit = styled.h1 `

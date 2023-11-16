@@ -1,5 +1,16 @@
 import styled from "styled-components"
+/**------------------------------------------------------------------------------------------------- */
+/**---------------------Estilo para Body da Pagina principal de LOGIN------------------------------- */
+export const BodyLoginPage = styled.body`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`
 
+/**------------------------------------------------------------------------------------------------- */
+/**---------------------Estilo para Body padrão das Paginas----------------------------------------- */
 export const CabContainer = styled.div `
     margin-top: 5px;
     width: 562px;

@@ -9,7 +9,7 @@ export const ChoiceButton = styled.button`
     border: 3px solid #003BFF;
     color: #FFF;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -25,8 +25,8 @@ export const ChoiceButton = styled.button`
 export const MenuButton = styled.button`
     background: ${(prop) => prop.onecolor}; /** É passado cor RGB via propriedades  */
     display: flex;
-    width: 226px;
-    height: 59px;
+    width: 276px;
+    height: 74px;
     border-radius: 24px;
     border: 3px solid #003BFF;
     margin-bottom: 25px;
@@ -37,13 +37,13 @@ export const MenuButton = styled.button`
 `
 /* Conteiner do texto + Font / para os botãos do Menu */
 export const MenuText = styled.h1 `
-    padding-top: 11.50px;
+    padding-top: 15px;
     width: 100%;
-    height: 36px;
+    height: 100%;
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 26px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
 `
