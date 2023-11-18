@@ -1,0 +1,18 @@
+Login:
+var googleId
+var Email
+Var Name
+var ImageUrl
+
+Novo Cadastro:
+var Marca STRING
+var Modelo STRING
+var Ano NUMBER
+var Placa STRING
+var Descrição STRING
+
+Teste de Bateria:
+var TotalTestes NUMBER
+var BateriaPerc %
+var Data DATA
+var Status STRING

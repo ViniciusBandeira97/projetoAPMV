@@ -1,3 +1,4 @@
+------------------FRONT-END--------------------------
 #1 Criando front-end   
     - Usando npm vite@latest
     - nome: front-end
@@ -11,3 +12,23 @@
 
 #3 Biblioteca Style Components
     - npm install styled-components
+
+------------------BACK-END--------------------------
+#1 Configurar o projeto Node.js
+    - npm init -y  "Isso criará um arquivo 'packge.json'
+
+2# Instalar Dependências
+    - npm install express mongoose cors
+        express: Framework web para Node.js.
+        mongoose: ODM (Object Data Modeling) para MongoDB.
+        Cors: Compartilhamento de recursos de origem cruzada
+
+3# reiniciar o server
+    - npm i -D nodemon
+        Para reiniciar automaticamente o servidor durante o desenvolvimento.
+
+4# Criando conta na MongoDB Atlas Cloud
+    - Projeto criado "Cluster ProjetoAPMV" no site
+    - Minha conexão "mongodb+srv://viniciusbandeira:<password>@cluster-projetoapmv.4doxudq.mongodb.net/?retryWrites=true&w=majority"
+    - Chave de segurança: 9WbuvyCTyCuBesXU
+    - npm install mongodb
