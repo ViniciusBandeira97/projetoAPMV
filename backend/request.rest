@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/carR
+content-Type: application/json
+
+{
+        "Marca": "Toyota",
+        "Modelo": "Supra 2jz",
+        "Ano": 2008,
+        "Placa": "IFI1854",
+        "Descrição": "Carro de pista",
+        "UserEmail": "debora.silveira@outlook.com"
+}
+
+###
+GET http://localhost:3000/api/carR
+
+###
+DELETE http://localhost:3000/api/carR/6558f8be288dcf0e
+
+###
+POST http://localhost:3000/api/userR
+content-Type: application/json
+
+{
+        "Email": "roberto@outlook.com",
+        "Name": "Roberto do Santos Rocha",
+        "ImageURL": "http//asdqwe"
+}
+
+###
+GET http://localhost:3000/api/userR/viniciusbandeira@rede.ulbra.br
+

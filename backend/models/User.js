@@ -3,24 +3,27 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const userSchema = new Schema ({
-        GoogleID: {
-            type: String
-        },
         Email: {
+            type: String,
+            unique: true,
+            require: true
+        },
+        ImageURL: {
             type: String
         },
         Name: {
             type: String
-        },
-        ImageURL: {
-            type: Image
         }, 
+        Cars: [{ 
+            type: String, 
+            ref: 'Car' 
+        }], // Usar o campo Email como referência
+
     },
-);
+    { timestamps: true});
 
 const User = mongoose.model("User", userSchema);
 
 module.exports = {
-    User,
-    userSchema
+    User
 };

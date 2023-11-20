@@ -13,6 +13,9 @@
 #3 Biblioteca Style Components
     - npm install styled-components
 
+#4 Login Social
+    - npm i jwt-decode
+
 ------------------BACK-END--------------------------
 #1 Configurar o projeto Node.js
     - npm init -y  "Isso criará um arquivo 'packge.json'

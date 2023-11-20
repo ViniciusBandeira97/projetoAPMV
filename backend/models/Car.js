@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const { userSchema } = require("./User");
-
 const carSchema = new Schema ({
     Marca: {
         type: String,
@@ -24,12 +22,17 @@ const carSchema = new Schema ({
     Descrição: {
         type: String
     },
+    UserEmail: { 
+        type: String, 
+        ref: 'User.Email', 
+        required: true 
+    }, // Usar o campo Email como referência
     },
-    { timestamps: true}
-);
+    { timestamps: true});
 
 const Car = mongoose.model("Car", carSchema);
 
 module.exports = {
-    Car
+    Car,
+    carSchema
 };

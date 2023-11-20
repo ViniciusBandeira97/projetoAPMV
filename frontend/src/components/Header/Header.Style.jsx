@@ -52,14 +52,13 @@ export const HeaderTitleDiv = styled.div `
     display: flex;
 `
 export const ImageCarDiv = styled.div`
-    padding-right: 230px;
     padding-top: 10px;
     height: 100%;
     flex-direction: column; /* Define a direção da coluna para elementos filhos */
     display: block;
     
     @media (max-width: 1370px){
-       padding-right: 130px;
+       
     }
 `
 export const ImgCar = styled.img `
@@ -103,8 +102,8 @@ export const CenterTitle = styled.h1`
     }    
 `
 export const Exit = styled.h1 `
-    padding-top: 70px;
-    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 140px;
     color: #FBBC05;
     font-family: Inter;
     font-size: 28px;
@@ -115,7 +114,32 @@ export const Exit = styled.h1 `
     color: #fb0505;
     }
     @media (max-width: 1370px){
-        padding-top: 50px;
+        padding-top: 10px;
         font-size: 24px;
     }
+`
+export const UserProfile = styled.div `
+    margin-top: 10px;
+    display: flex; 
+`
+export const ElementText = styled.div `
+    margin-top: 10px;
+    flex-direction: column; /* Define a direção da coluna para elementos filhos */
+    display: block;
+`
+export const ElementImageURL = styled.img `
+    margin-right: 10px;
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+`
+export const ElementName = styled.h2 `
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+`
+export const ElementEmail = styled.h2 `
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
 `

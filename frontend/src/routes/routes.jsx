@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import ChoiceVeiculo from "../pages/ChoiceVehicle"
 import Menu from "../pages/Menu"
-import RegisterNew from "../pages/RegisterNew"
+import RegisterNew from "../pages/RegisterNew/Registercar"
 import Vehicle from "../pages/Vehicle"
 import HistoricDelete from "../pages/HistoricDelete"
 import RegisterDelete from "../pages/RegisterDelete"
-import PrincipalPage from "../pages/SingIn"
+import PrincipalPage from "../pages/SingIn/SingIn"
 
 function AppRoutes(){
     return (

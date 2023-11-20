@@ -1,7 +1,7 @@
 import styled from "styled-components"
 /**------------------------------------------------------------------------------------------------- */
 /**---------------------Estilo para Body da Pagina principal de LOGIN------------------------------- */
-export const BodyLoginPage = styled.body`
+export const BodyLoginPage = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
