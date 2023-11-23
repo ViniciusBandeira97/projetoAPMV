@@ -3,15 +3,15 @@ content-Type: application/json
 
 {
         "Marca": "Toyota",
-        "Modelo": "Supra 2jz",
-        "Ano": 2008,
-        "Placa": "IFI1854",
-        "Descrição": "Carro de pista",
+        "Modelo": "Corolla",
+        "Ano": 2012,
+        "Placa": "IHF1888",
+        "Descrição": "Carro de estrada",
         "UserEmail": "debora.silveira@outlook.com"
 }
 
 ###
-GET http://localhost:3000/api/carR
+GET http://localhost:3000/api/carR/debora.silveira@outlook.com
 
 ###
 DELETE http://localhost:3000/api/carR/6558f8be288dcf0e

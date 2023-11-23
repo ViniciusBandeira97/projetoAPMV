@@ -1,5 +1,5 @@
 import { CenterTitle, ElementEmail, ElementImageURL, ElementName, ElementText, Exit, HeaderTitleDiv, ImageCarDiv, ImgCar, StyleHeader, Title, UserProfile } from "./Header.Style"
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function HeaderGlobal() {
     const location = useLocation();
@@ -19,7 +19,7 @@ function HeaderGlobal() {
                     <ElementText>
                         {Name && <ElementName>{Name}</ElementName>}
                         {Email && <ElementEmail>{Email}</ElementEmail>}
-                        <Exit>Sair</Exit>
+                        <Link to={"/"}><Exit>Sair</Exit></Link>
                     </ElementText>
                 </UserProfile>
 

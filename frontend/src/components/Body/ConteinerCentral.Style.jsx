@@ -8,7 +8,31 @@ export const BodyLoginPage = styled.div`
     flex-direction: row;
     justify-content: center;
 `
-
+/**------------------------------------------------------------------------------------------------- */
+/**---------------------Estilo para Body padrão da pagina Vehicle e Components CarCard----------------------------------------- */
+export const ContainerDivCard = styled.div`
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000;
+    overflow: auto;
+`
+export const DivCarCard = styled.div`
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #e0ffff;
+    &:hover{
+        background-color: #69e469;
+        border: 3px solid #F90;
+    }
+`
 /**------------------------------------------------------------------------------------------------- */
 /**---------------------Estilo para Body padrão das Paginas----------------------------------------- */
 export const CabContainer = styled.div `

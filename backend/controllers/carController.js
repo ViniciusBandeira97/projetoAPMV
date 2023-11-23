@@ -31,11 +31,18 @@ const carController = {
             res.status(500).json({ erro: 'Erro interno do servidor' });
         }
     },
-    getAll: async (req, res) => {
+    getAllByUserEmail: async (req, res) => {
+        const { Email } = req.params;
         try {
-            const carR = await CarModel.find();
-
+            // Busca todos os carros cadastrados para o e-mail fornecido
+            const carR = await CarModel.find({ UserEmail: Email });
+                
+            // Caso o Usuario cadastrado não tenha nenhum veiculo cadastrado
+            if (carR.length === 0) {
+                return res.json({ mensagem: 'Usuário existe, mas não possui carros cadastrados.' });
+            }
             res.json(carR);
+            
         } catch (error) {
             console.error('Erro:', error);
             res.status(500).json({ erro: 'Erro interno do servidor' });
