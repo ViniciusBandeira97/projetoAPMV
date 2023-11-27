@@ -9,6 +9,6 @@ router.route("/carR").get((req, res) => carController.getAll(req, res));
 
 router.route("/CarR/:Email").get((req, res) => carController.getAllByUserEmail(req, res));
 
-router.route("/carR/:id").delete((req, res) => carController.delete(req, res));
+router.route("/carR/:Email/:Modelo/:Ano/:Placa").get((req, res) => carController.delete(req, res));
 
 module.exports = router ;

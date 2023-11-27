@@ -35,3 +35,10 @@
     - Minha conexão "mongodb+srv://viniciusbandeira:<password>@cluster-projetoapmv.4doxudq.mongodb.net/?retryWrites=true&w=majority"
     - Chave de segurança: 9WbuvyCTyCuBesXU
     - npm install mongodb
+
+------------------DATA--------------------------
+#Instalando Lib de Python para o projeto
+    -pip install obd
+    -pip install numpy
+    -pip install scikit-learn 
+    -pip install joblib  // Para serializar objetos Python com matrizes NumPy

@@ -174,3 +174,16 @@ export const DivRegister = styled.div`
     width: 400px;
     height: 150px;
 `
+/**------------------------------------------------------------------------------------------------- */
+/**--------Estilo de texto e font para a pagina de novo teste --------------------------------- */
+
+export const NumberCountdown = styled.span`
+    font-size: 70px;
+    font-weight: 700;
+    color: #00385F; // Substitua pelo seu código de cor desejado
+`
+export const TextLigue = styled.span`
+    font-size: 45px;
+    font-weight: 700;
+    color: #01c001; // Substitua pelo seu código de cor desejado
+`

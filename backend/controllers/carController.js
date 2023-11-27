@@ -49,26 +49,25 @@ const carController = {
         }
     },
     delete: async (req, res) => {
+        const { Email, Modelo, Ano, Placa } = req.params;
         try {
-            const id = req.params.id;
 
-            const carR = await CarModel.findById(id);
+            const carR = await CarModel.findOne({UserEmail: Email, Modelo, Ano, Placa});
 
             if (!carR){
                 res.status(404).json({ msg: "Cadastro não encontrado."});
                 return;
             }
             
-            const deletedCar = await CarModel.findByIdAndDelete(id);
-
-            res
-                .status(200)
-                .json({ deletedCar, msg: "Cadastro de veículo excluído com sucesso."});
+            const response = await CarModel.deleteOne({UserEmail: Email, Modelo, Ano, Placa});
+            
+            res.status(201).json({ response, msg: "Veiculo excluido com sucesso!"});
 
         } catch (error) {
-            
+            console.error('Erro:', error);
+            return res.status(500).json({ erro: 'Erro interno do servidor' });
         }
-    }
+    },
 };
 
 module.exports = carController;

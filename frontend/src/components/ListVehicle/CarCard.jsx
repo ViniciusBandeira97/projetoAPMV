@@ -1,15 +1,32 @@
 // CarCard.js
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { DivCarCard } from '../Body/ConteinerCentral.Style';
+import { useEffect, useState } from 'react';
 
 const CarCard = ({ carInfo }) => {
-  const navigate = useNavigate();
+  const location = useLocation();
+  const {Name, Email, ImageURL} = location.state || {};
 
+  const navigate = useNavigate();
+  const [RedirecionarMenu, setRedirecionarMenu] = useState(false);
+  
   const handleCardClick = () => {
-    navigate('/menu', {
-      state: carInfo,
-    });
+      // Redirecionar para pagina de Menu
+      setRedirecionarMenu(true);
   };
+
+  useEffect(() => {
+    // Se redirecionarMeunu for true, execute a ação após 1/2 segundos
+    if (RedirecionarMenu) {
+      const timeoutId = setTimeout(() => {
+        navigate("/menu",{
+          state:{carInfo, Email, ImageURL, Name},
+        });
+      }, 500);
+      // Limpar o timeout se o componente for desmontado antes do tempo limite
+      return () => clearTimeout(timeoutId);
+    }
+  }, [ RedirecionarMenu, navigate, carInfo, Email, ImageURL, Name]); 
 
   return (
     <DivCarCard onClick={handleCardClick}>

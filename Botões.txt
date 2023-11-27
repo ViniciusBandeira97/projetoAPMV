@@ -7,8 +7,8 @@ import {ChoiceButton, MenuButton, DecisionButton, ReturnMenuButton} from './comp
       <MenuButton onecolor='#00385F' twocolor='#0076C8'>Trocar Veículo</MenuButton>
       <MenuButton onecolor='#CB0000' twocolor='#FF2E2E'>Excluir veículo</MenuButton>
 
-      <DecisionButton onecolor='#007B21' twocolor='#00C735'>SIM</DecisionButton>
-      <DecisionButton onecolor='#FFB904' twocolor='#B18000'>NÃO</DecisionButton>
+   OK   <DecisionButton onecolor='#007B21' twocolor='#00C735'>SIM</DecisionButton>
+   OK   <DecisionButton onecolor='#FFB904' twocolor='#B18000'>NÃO</DecisionButton>
 
       
       <DecisionButton onecolor='#007B21' twocolor='#00C735'>Voltar</DecisionButton>

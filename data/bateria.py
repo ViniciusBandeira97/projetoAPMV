@@ -4,7 +4,7 @@ import obd
 connection = obd.OBD('COM7')
 
 # Obtenha a tensão da bateria
-battery_voltage = connection.query(obd.commands.CONTROL_MODULE_VOLTAGE)
+battery_voltage = connection.query(obd.commands.ELM_VOLTAGE)
 
 # Obtenha o estado de carga da bateria (SOC)
 # soc = connection.query(obd.commands.SOC)

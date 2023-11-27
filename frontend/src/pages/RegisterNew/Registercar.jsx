@@ -1,6 +1,6 @@
 import { BodyContainer, ConteinerDiv } from '../../components/Body/ConteinerCentral.Style'
 import { ParagraphCRUD } from '../../components/TextFormatting.Style'
-import { DecisionButton, DivDB } from '../../components/Button.style'
+import { DecisionButtonCancelar, DecisionButtonYes, DivDB } from '../../components/Button.style'
 import { Idiv, IdivDesc, Input, InputDesc } from '../../components/Input.Style'
 import HeaderGlobal from '../../components/Header/HeaderGlobal'
 import BodyGlobal from '../../components/Body/BodyGlobal'
@@ -130,8 +130,8 @@ const Registercar = () => {
                       </IdivDesc>
                       {mensagemErro && <p style={{ color: 'red', fontSize: '18px' }}>{mensagemErro}</p>}
                       <DivDB>
-                        <DecisionButton onClick={cancelarCad}>Cancelar</DecisionButton>
-                        <DecisionButton onClick={enviarParaBackend}>Salvar</DecisionButton>
+                        <DecisionButtonCancelar onClick={cancelarCad}>Cancelar</DecisionButtonCancelar>
+                        <DecisionButtonYes onClick={enviarParaBackend}>Salvar</DecisionButtonYes>
                       </DivDB>
                  
                 </ConteinerDiv>

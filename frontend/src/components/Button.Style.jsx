@@ -22,8 +22,8 @@ export const ChoiceButton = styled.button`
 /**------------------------------------------------------------------------------------------------- */
 /**------------------------------------------------------------------------------------------------- */
 /* Conteiner do botão + estilo + efeito Hover / para os botãos do Menu */
-export const MenuButton = styled.button`
-    background: ${(prop) => prop.onecolor}; /** É passado cor RGB via propriedades  */
+export const MenuButtonNewTest = styled.button`
+    background: #34A853; 
     display: flex;
     width: 276px;
     height: 74px;
@@ -31,7 +31,46 @@ export const MenuButton = styled.button`
     border: 3px solid #003BFF;
     margin-bottom: 25px;
     &:hover{
-        background: ${(prop) => prop.twocolor}; /** É passado cor RGB via propriedades  */
+        background: #4CE073;
+        border: 3px solid #F90;
+    }
+`
+export const MenuButtonHistoric = styled.button`
+    background: #F49505; 
+    display: flex;
+    width: 276px;
+    height: 74px;
+    border-radius: 24px;
+    border: 3px solid #003BFF;
+    margin-bottom: 25px;
+    &:hover{
+        background: #FFCA7A; 
+        border: 3px solid #F90;
+    }
+`
+export const MenuButtonChoiceVehicle = styled.button`
+    background: #00385F;
+    display: flex;
+    width: 276px;
+    height: 74px;
+    border-radius: 24px;
+    border: 3px solid #003BFF;
+    margin-bottom: 25px;
+    &:hover{
+        background: #0076C8;
+        border: 3px solid #F90;
+    }
+`
+export const MenuButtonDelete = styled.button`
+    background: #CB0000; 
+    display: flex;
+    width: 276px;
+    height: 74px;
+    border-radius: 24px;
+    border: 3px solid #003BFF;
+    margin-bottom: 25px;
+    &:hover{
+        background: #FF2E2E;
         border: 3px solid #F90;
     }
 `
@@ -49,8 +88,8 @@ export const MenuText = styled.h1 `
 `
 /**------------------------------------------------------------------------------------------------- */
 /**---------------Estilo + fonte + efeito Hover / para os botãos de decisão------------------------- */
-export const DecisionButton = styled.button`
-    background: ${(prop) => prop.onecolor}; /** É passado cor RGB via propriedades  */
+export const DecisionButtonYes = styled.button`
+    background: #007B21; 
     width: 156.696px;
     height: 53.375px;
     margin: 15px;
@@ -62,7 +101,41 @@ export const DecisionButton = styled.button`
     font-style: normal;
     font-weight: 700;
     &:hover{
-        background: ${(prop) => prop.twocolor}; /** É passado cor RGB via propriedades  */
+        background: #00C735;
+        border: 3px solid #F90;
+    }
+`
+export const DecisionButtonNo = styled.button`
+    background: #FFB904; 
+    width: 156.696px;
+    height: 53.375px;
+    margin: 15px;
+    border-radius: 24px;
+    border: 3px solid #003BFF; 
+    color: #FFF;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    &:hover{
+        background: #B18000; 
+        border: 3px solid #F90;
+    }
+`
+export const DecisionButtonCancelar = styled.button`
+    background: #CB0000; 
+    width: 156.696px;
+    height: 53.375px;
+    margin: 15px;
+    border-radius: 24px;
+    border: 3px solid #003BFF; 
+    color: #FFF;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    &:hover{
+        background: #FF0000; 
         border: 3px solid #F90;
     }
 `

@@ -3,7 +3,7 @@ import BodyGlobal from '../../components/Body/BodyGlobal'
 import { BodyContainer, ContainerDivCard} from '../../components/Body/ConteinerCentral.Style'
 import HeaderGlobal from '../../components/Header/HeaderGlobal'
 import { useEffect, useState } from 'react';
-import { DecisionButton } from '../../components/Button.style';
+import { DecisionButtonYes } from '../../components/Button.style';
 import CarCard from '../../components/ListVehicle/CarCard';
 
 function Vehicle() {
@@ -66,7 +66,7 @@ function Vehicle() {
                 ))}
               </ContainerDivCard>
               
-                <DecisionButton onClick={Return}>Voltar</DecisionButton>
+                <DecisionButtonYes onClick={Return}>Voltar</DecisionButtonYes>
             
             </BodyContainer>
         </center>     

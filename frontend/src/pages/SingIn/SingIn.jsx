@@ -50,7 +50,7 @@ const SingIn = () => {
           }),
         });
         const dados = await resposta.json();
-        console.log('Resposta do backend:', dados); 
+        console.log('CadLogin backend:', dados); 
         
         // Configurar o estado para redirecionar
         setRedirecionar(true);
@@ -66,7 +66,6 @@ const SingIn = () => {
   
       if (dados.emailExistente) {
         console.log('E-mail já cadastrado no banco de dados.');
-        console.log('E-mail:', Email);
         // Lógica para lidar com o e-mail já existente, se necessário
         // Configurar o estado para redirecionar
         setRedirecionar(true); 
